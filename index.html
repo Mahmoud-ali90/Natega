@@ -12,18 +12,19 @@
     <section class="lookup">
       <div class="brand">
         <span>نتيجة الثانوية العامة</span>
-        <strong>2026</strong>
+        <strong>٢٠٢٦</strong>
       </div>
 
       <div class="intro">
-        <p>استعلام مجاني</p>
+        <p>استعلام مجاني وفوري</p>
         <h1>اعرف نتيجتك برقم الجلوس</h1>
+        <span class="subline">اكتب الرقم بالعربي أو بالإنجليزي، والنتيجة هتظهر فورًا.</span>
       </div>
 
       <form id="search-form" class="search">
         <label for="seat-number">رقم الجلوس</label>
         <div class="search-row">
-          <input id="seat-number" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="اكتب رقم الجلوس" required>
+          <input id="seat-number" type="text" inputmode="numeric" pattern="[0-9٠-٩۰-۹]*" placeholder="مثال: ٢٠٠١٩٧٠" required>
           <button id="search-button" type="submit">استعلام</button>
         </div>
       </form>
@@ -41,16 +42,16 @@
 
       <div id="success-panel" class="success-panel" hidden>
         <span>مبروك النجاح</span>
-        <strong>ربنا يوفقك في اللي جاي</strong>
+        <strong>نتيجة ممتازة، ربنا يوفقك في اللي جاي</strong>
       </div>
 
       <div class="score">
         <div class="score-main">
           <span>المجموع</span>
-          <strong><b id="total-degree"></b> / <b id="max-degree">320</b></strong>
+          <strong><b id="total-degree"></b> <em>من</em> <b id="max-degree">٣٢٠</b></strong>
         </div>
         <div class="circle" aria-label="النسبة المئوية">
-          <span id="percentage">0%</span>
+          <span id="percentage">٠٪</span>
         </div>
       </div>
 
