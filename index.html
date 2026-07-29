@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نتيجة الثانوية العامة</title>
+  <meta name="description" content="استعلم عن نتيجة الثانوية العامة برقم الجلوس.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="lookup">
+      <div class="brand">
+        <span>نتيجة الثانوية العامة</span>
+        <strong>2026</strong>
+      </div>
+
+      <div class="intro">
+        <p>استعلام مجاني</p>
+        <h1>اعرف نتيجتك برقم الجلوس</h1>
+      </div>
+
+      <form id="search-form" class="search">
+        <label for="seat-number">رقم الجلوس</label>
+        <div class="search-row">
+          <input id="seat-number" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="اكتب رقم الجلوس" required>
+          <button id="search-button" type="submit">استعلام</button>
+        </div>
+      </form>
+
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <section id="result" class="result" hidden>
+      <div class="result-top">
+        <span id="status-pill" class="pill"></span>
+        <span id="seat-label" class="seat"></span>
+      </div>
+
+      <h2 id="student-name"></h2>
+
+      <div id="success-panel" class="success-panel" hidden>
+        <span>مبروك النجاح</span>
+        <strong>ربنا يوفقك في اللي جاي</strong>
+      </div>
+
+      <div class="score">
+        <div class="score-main">
+          <span>المجموع</span>
+          <strong><b id="total-degree"></b> / <b id="max-degree">320</b></strong>
+        </div>
+        <div class="circle" aria-label="النسبة المئوية">
+          <span id="percentage">0%</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <span id="bar-fill"></span>
+      </div>
+
+      <dl class="details">
+        <div>
+          <dt>الحالة</dt>
+          <dd id="case-description"></dd>
+        </div>
+        <div>
+          <dt>النسبة</dt>
+          <dd id="percentage-text"></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

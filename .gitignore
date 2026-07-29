@@ -1,0 +1,6 @@
+/bin/
+/obj/
+/Properties/
+/wwwroot/
+/data/natega.json
+*.log

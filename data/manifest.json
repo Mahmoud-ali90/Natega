@@ -1,0 +1,6 @@
+{
+  "generatedAt": "2026-07-29T03:24:54.6496084+00:00",
+  "rowCount": 919396,
+  "maxDegree": 320,
+  "shardKey": "first 3 digits of seatingNo"
+}
